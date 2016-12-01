@@ -4,13 +4,9 @@ function walk(node)
 {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
-	// -->I<-- stole this from cloud2butt
+
 	var child, next;
 
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
-		return;
-	}
 
 	switch ( node.nodeType )
 	{
@@ -42,6 +38,7 @@ function handleText(textNode)
 	v = v.replace(/\bPro-Life\b/g, "Anti-choice");
 	v = v.replace(/\bPro-life\b/g, "Anti-choice");
 	v = v.replace(/\bPro life\b/g, "Anti-choice");
+	v = v.replace(/\bProLife\b/g, "Anti-Choice");
 
 
 	textNode.nodeValue = v;
