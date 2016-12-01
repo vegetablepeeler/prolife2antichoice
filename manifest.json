@@ -3,6 +3,9 @@
 	"name": "Pro Life To Anti Choice",
 	"version": "1.0",
 	"description": "Replaces the text 'pro life' with 'anti choice'.",
+    "icons": {
+        "128": "antichoice.png"
+    },
 	"content_scripts":
 	[
 		{
